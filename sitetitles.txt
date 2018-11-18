@@ -1,0 +1,50 @@
+Real News Checker
+File: sitetitles.py
+
+Created by Zachary Nawrocki
+LinkedIn: www.linkedin.com/in/zachary-nawrocki-b88b54152
+
+This file lists common news website titles in a format to be parsed in HashSites in sitelist.py. 
+New website titles can be added to this text file and work properly, as long as the format is 
+retained. If a given url does not come from one of these websites, it will continue to contain 
+the original web title in the Site class from wsite.py. For more information about the purpose 
+of this file, see sitelist.py.
+
+# Top Websites (Excluding Local News)
+Sources: 
+https://blog.feedspot.com/usa_news_websites/
+http://www.ebizmba.com/articles/news-websites
+http://www.journalism.org/2011/05/09/top-25/
+https://www.makeuseof.com/tag/top-5-world-news-websites-guaranteed-free-censorship/
+
+
+SITETITLES:
+cnn-CNN
+foxnews-Fox News
+usatoday-USA Today
+bbc-BBC News
+reuters-Reuters
+politico-Politico
+nytimes-The New York Times
+huffingtonpost-The Huffington Post
+yahoo-Yahoo News
+npr-NPR News
+latimes-Los Angeles Times
+nbcnews-NBC News
+cbsnews-CBS News
+nypost-New York Post
+abcnews-ABC News
+nydailynews-New York Daily News
+breitbart-Breitbart News Network
+chicagotribune-Chicago Tribune
+newsmax-Newsmax
+washingtontimes-The Washington Times
+observer-Observer
+newsday-Newsday
+washingtonpost-The Washington Post
+forbes-Forbes
+dailymail-Daily Mail
+theguardian-The Wall Street Journal
+apnews-Associated Press
+aol-AOL
+espn-ESPN

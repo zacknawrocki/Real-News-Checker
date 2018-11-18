@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Real News Checker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="/static/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/static/fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    
+    <header role="banner">
+     
+      <nav class="navbar navbar-expand-md navbar-dark bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="/">Real News Checker</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="updates">Updates</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(/static/images/paper.jpg);">
+      <div class="container">
+        <div class="row align-items-center site-hero-inner justify-content-center">
+          <div class="col-md-8 text-center">
+
+            <div class="mb-5 element-animate">
+              <h1>Find related news articles.</h1>
+              <p>Learn from all the sources to be better informed.</p>
+            </div>
+
+            <form class="form-inline element-animate" method = "POST" id="search-form">
+              <input type="text" name = "url" class="form-control form-control-block search-input" id="autocomplete" placeholder="Enter url to news article.">
+              <button type="submit" id="search_button" class="btn btn-primary">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+   
+    <footer class="site-footer">
+      <div class="container">
+          <h3 class="mb-4"><center>Connect</h3>
+              <div align="center">
+              <a href="https://www.linkedin.com/in/zachary-nawrocki-b88b54152" align="center" class="p-2"><span class="fa fa-linkedin fa-lg"></span></a>
+              <a href="https://www.instagram.com/zacknawrocki/" class="p-2"><span class="fa fa-instagram fa-lg"></span></a>
+              <br/><br/><br/>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-7 text-center">
+            Web application programmed and designed by Zachary Nawrocki. Web template designed by Colorlib. Searching currently powered by Google's Python API. <br/>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+    
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/jquery-migrate-3.0.0.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.waypoints.min.js"></script>
+    <script src="/static/js/jquery.stellar.min.js"></script>
+
+    <!-- Loading wheel for search button-->
+    <script>
+    $('#search_button').click(function(){
+    this.form.submit();
+    this.disabled=true;
+    this.innerHTML='<i class="fa fa-spinner fa-spin"></i> Checking...';
+    });
+    </script>
+
+
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>
